@@ -5,24 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>adventure page</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
-</head>
-<header>
-    <nav>
-        <img src="C:\Users\Hp\Desktop\src\imgs\linkedin_profile_image.png" alt="my profile">
-        <div class="logo"><img src="imgs\linkedin_profile_image.png" alt="my logo"></div>
-        <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="hobby.html">Hobby</a></li>
-            <li><a href="education.html">Education</a></li>
-            <li><a href="interest.html">Interest</a></li>
-            <li><a href="adventure.html">Adventure</a></li>
+    <link rel="stylesheet" href="../css/advernture.css">
+    <header>
+        <nav>
+            <div class="logo"><img src="../imgs/linkedin_profile_image.png" alt="my logo"></div>
+            <img src="../imgs/me.png" alt="my profile" class="my_profile"  >
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="hobby.html">Hobby</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="interest.html">Interest</a></li>
+                <li><a href="adventure.html">Adventure</a></li>
+                
+                
+            </ul>
             <i class="ri-list-unordered"></i><!--wil be displayed none on the css for divices rather than phone-->
-        </ul>
-    </nav>
-</header>
+
+        </nav>
+    </header>
+    <hr>
+
 <body>
     <section class="Adventure">
-        <h1>my ups and downs</h1>
+        <h1>My ups and downs</h1>
         <p>
             I often find myself engaged in deep reflection and inner dialogue about my next steps in life. 
             Questions about what I should learn and how I can shape my career for the future weigh heavily on my mind. 
@@ -32,6 +37,7 @@
         
         </p>
         <h3>good video i learnt from</h3>
+        <div class="videos1">
         <iframe width="560" 
         height="315" src="https://www.youtube.com/embed/YdcRBQRUd94?si=sXXwwYaXG62BA_iD" 
         title="YouTube video player" 
@@ -45,6 +51,8 @@
        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
        referrerpolicy="strict-origin-when-cross-origin" 
        allowfullscreen></iframe>
+       </div>
+       <div class="secPar"> 
         <h2>success history</h2>
         <p>
             I am currently focused on the journey of self-discovery and establishing a sense of stability in my life.
@@ -53,38 +61,49 @@
             ensuring that I make choices that resonate with my authentic self and lead to personal fulfillment.
         
         </p>
-        <h3>my fav learning movie</h3>
+    </div>
+        <div class="movie"><h3>my fav learning movie</h3></div>
+        
 
+        <div class="videos">
         
-       <iframe width="560" 
-       height="315" 
-       src="https://www.youtube.com/embed/82pdJ7bCZdg?si=JJYrVHAv2fGiDSk0" 
-       title="YouTube video player" 
-       frameborder="0" 
-       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-       referrerpolicy="strict-origin-when-cross-origin" 
-       allowfullscreen></iframe>
-       <iframe width="560" 
-       height="315" 
-       src="https://www.youtube.com/embed/ybVfdZ6G7po?si=2ey_71cnlByCUj3h"
-        title="YouTube video player" 
-        frameborder="0" 
+        <iframe width="560" 
+        height="315" 
+        src="https://www.youtube.com/embed/dwDIz2YNQSo?si=_q_qeXGJw6a5vvYv" 
+        title="YouTube video player" frameborder="0" 
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-       referrerpolicy="strict-origin-when-cross-origin" 
-       allowfullscreen></iframe>
-       <iframe width="560" 
-       height="315" 
-       src="https://www.youtube.com/embed/ybVfdZ6G7po?si=2ey_71cnlByCUj3h"
-        title="YouTube video player" 
-        frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-       referrerpolicy="strict-origin-when-cross-origin" 
-       allowfullscreen></iframe>
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         
-    </section>
+        <iframe width="560" height="315" 
+        src="https://www.youtube.com/embed/7pc759kA_mw?si=vnnELCqeeee5HQCG"
+         title="YouTube video player" frameborder="0" 
+         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+         <div class="last">
+            <iframe width="560" 
+            height="315" 
+            src="https://www.youtube.com/embed/d8ZmjglkYuo?si=MDYHqg34lfbFBXaf" 
+            title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen></iframe>
+        </div>
+        </div>
+      </section>
 </body>
 <footer>
+    <div class="logo"><img  src="../imgs/linkedin_profile_image.png" alt="my profile"></div>
     <p>life is full of ups and down!</p>
-     <img src="C:\Users\Hp\Desktop\src\imgs\linkedin_profile_image.png" alt="my profile">
+    
 </footer>
 </html>
+<script>
+    const icon = document.getElementsByTagName('i')[0]; // Select the first <i> tag
+    const navList = document.getElementsByTagName('ul')[0]; // Select the first <ul> tag
+
+    icon.addEventListener('click', function() {
+        navList.classList.toggle('show'); // Toggle the 'show' class
+        navList.style.display = navList.style.display === 'block' ? 'none' : 'block'; // Toggle display
+    });
+</script>
+

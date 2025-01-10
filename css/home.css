@@ -1,0 +1,280 @@
+
+*{
+    color:#4A4A4A;
+    font-family: Arial, sans-serif;
+    
+}
+body{
+    background-color: #FFF9E6;
+    size:16px;
+         
+}
+h1{
+    size: 20px;
+    text-align: center;
+}
+.artFooter{
+    position: relative;
+    text-align: right;
+}
+    
+hr{
+    border: none; /* Remove default border */
+    border-top: 2px solid #FFC300;
+        }  
+    
+
+img{
+    filter: brightness(1.1) contrast(1.2) sepia(0.3);
+    border-radius: 50px;
+} 
+
+.homeimg {
+    display: flex; /* Enable flexbox layout */
+    flex-direction: column; /* Stack images vertically */
+    align-items: center; /* Center images horizontally */
+    gap: 20px; /* Set the vertical gap between images */
+}
+
+.homeimg img {
+    width: 345px; /* Fixed width */
+    height: 124px; /* Fixed height */
+}
+.wom{
+    display: none;
+    width:70%;
+}
+i {
+    cursor: pointer; /* Change cursor to pointer on hover */
+    position: absolute; /* Position the icon absolutely */
+    top: 10px; /* Position from the top */
+    right: 10px; /* Position from the right */
+    font-size: 24px; /* Adjust icon size */
+    filter: brightness(1.1) contrast(1.2) sepia(0.3);
+    display: block;
+}
+i:hover + ul {
+display: block; /* Show the list */
+}
+  .logo img{
+    width:86px;
+    height: 57px;
+    filter: brightness(1) contrast(1.2) sepia(0.5);
+  } 
+  .my_profile{
+    display: none;
+    width:10%;
+    filter: brightness(0.5) contrast(1.2) sepia(0.5);
+  }
+  .logo:hover + .my_profile  {
+    display: block;
+}
+  ul {
+    display:none;
+    list-style-type: none;
+    padding: 0;
+    align-items: center;
+    justify-items: center;
+    position: absolute; /* Position the icon absolutely */
+    top: 10px; /* Position from the top */
+    right: 10px;  
+    background-color: #FFC300;
+}
+li a{
+/* Hide the list by default */
+background-color: #FFC300;
+background-size: 100px 50px;
+text-decoration: none;
+}
+a:hover{
+color:#FFE135;
+text-decoration: underline;
+
+}footer{
+    display: flex;
+    position: absolute;
+    size: 12px;
+    
+       /* Remove padding above the footer */
+    
+    }
+ 
+ 
+/*mobile land scape*/
+@media (min-width: 600px) and (max-width: 650px) and (orientation: landscape) {
+    .homeimg  {
+         align-items: start;
+        
+    }
+    .homeimg img{
+        width:250px;
+    }
+    .homeParagraph .first{
+        width: 60%;
+        position: relative;
+        left:260px ;
+        top:-250px;
+    }
+    .second{
+        position:relative;
+        top:-200px;
+    } 
+    .artFooter{
+        position:relative;
+        top:-200px;
+    }
+    footer{
+        position:relative;
+        top:-100px;
+    }
+}
+/*tablet portrait */
+
+@media (min-width: 650px) and (max-width: 768px) {
+    i {
+display: none; /* Use a more specific selector */
+}
+ul{
+display:flex;
+width: right 250px;
+height:top 100px;
+gap:50px;
+background-color:#FFC300;
+}
+li a{
+background-color:#FFC300;
+}
+.homeimg  {
+display:flex;
+flex-direction: row;
+margin-top: 0; /* Remove margin above the footer */
+ padding-top: 0; 
+
+}
+.homeimg img{
+width: 300px; /* Fixed width */
+height: 200px;
+}
+
+nav{
+
+background-color:#FFC300;
+}
+.logo{
+width:100px;
+height: 75px;
+}
+.logo img{
+width:100px;
+height: 75px;
+}
+hr{
+display: none;
+}
+a:hover{
+    color:#FFE135;
+}
+
+}
+.footer {
+    margin-top: 0; /* Remove margin above the footer */
+    padding-top: 0; /* Remove padding above the footer */
+}
+/*tab land scape*/
+@media (min-width: 768px) and (max-width: 1024px) {
+i {
+display: none; /* Use a more specific selector */
+}
+ul{
+display:flex;
+width: right 250px;
+height:top 100px;
+gap:50px;
+background-color: #FFC300 ;
+}
+li a{
+background-color:#FFC300;
+}
+.homeimg  {
+display:flex;
+flex-direction: row;
+
+}
+.homeimg img{
+width: 300px; /* Fixed width */
+height: 200px;
+}
+
+nav{
+
+background-color:#FFC300 ;
+}
+.logo{
+width:100px;
+height: 75px;
+}
+.logo img{
+width:100px;
+height: 75px;
+}
+hr{
+display: none;
+}
+.wom {
+display: block;
+
+}
+.wom img{
+align-self: center;
+}
+}
+/*desktop*/
+@media (min-width:1024px){
+
+i {
+display: none; /* Use a more specific selector */
+}
+ul{
+display:flex;
+width: right 250px;
+height:top 100px;
+gap:50px;
+background-color:#FFC300;
+gap:120px;
+font-size:20px;
+}
+a:hover{
+    color: #FFE135;
+}
+li a{
+background-color: #FFC300;
+}
+.homeimg  {
+display:flex;
+flex-direction: row;
+gap:100px;
+
+}
+.homeimg img{
+width: 500px; /* Fixed width */
+height: 300px;
+
+}
+
+nav{
+
+background-color:#FFC300 ;
+}
+.logo{
+width:100px;
+height: 75px;
+}
+.logo img{
+width:100px;
+height: 75px;
+}
+hr{
+display: none;
+}
+
+}

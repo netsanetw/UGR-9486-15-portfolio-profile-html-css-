@@ -4,24 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>education page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
+    <link rel="stylesheet" href="../css/educaton.css">
 </head>
 <header>
     <nav>
-        <div class="logo"><img src="imgs\linkedin_profile_image.png" alt="my logo"></div>
+        <div class="logo"><img src="../imgs/linkedin_profile_image.png" alt="my logo"></div>
+        <img src="../imgs/me.png" alt="my profile" class="my_profile"  >
         <ul>
             <li><a href="home.html">Home</a></li>
             <li><a href="hobby.html">Hobby</a></li>
             <li><a href="education.html">Education</a></li>
             <li><a href="interest.html">Interest</a></li>
             <li><a href="adventure.html">Adventure</a></li>
-            <i class="ri-list-unordered"></i><!--wil be displayed none on the css for divices rather than phone-->
+            
+            
         </ul>
+        <i class="ri-list-unordered"></i><!--wil be displayed none on the css for divices rather than phone-->
+
     </nav>
-</header>
+</header><hr>
 <body>
     <section class="Education">
         <h1>My  journey  of education</h1>
-        <p>
+        <p class="para1">
             Throughout my academic journey, I have consistently strived for excellence. 
             I was proud to be the top scorer in both elementary and high school,
              where my dedication and hard work truly paid off. Currently,
@@ -31,40 +37,31 @@
               Each experience contributes to my growth, and 
               I’m excited to learn and advance further in my studies.
         
-        
+        <div class="tab1">
         <h2> Grade Table</h2>
-        <table>
-        <thead>
-            <tr>
-                <th>school</th>
-                <th>Grade</th>
-                <th>Results</th>
-            </tr>
-        </thead>
-            <tbody>
-                <tr>
-                    <td>high school</td>
-                    <td>9th</td>
-                    <td>96.6</td>
-                </tr>
-                <tr>
-                    <td>high school</td>
-                    <td>9th</td>
-                    <td>96.6</td>
-                </tr>
-                <tr>
-                    <td>high school</td>
-                    <td>9th</td>
-                    <td>96.6</td>
-                </tr>
-                <tr>
-                    <td>high school</td>
-                    <td>9th</td>
-                    <td>96.6</td>
-                </tr>
-                </tbody>
-            </table>
-        <p>
+        <div class="grid-table">
+            <div class="grid-header">School</div>
+            <div class="grid-header">Grade</div>
+            <div class="grid-header">Results</div>
+            
+            <div class="grid-item">High School</div>
+            <div class="grid-item">9th</div>
+            <div class="grid-item">95.6</div>
+            
+            <div class="grid-item">High School</div>
+            <div class="grid-item">10th</div>
+            <div class="grid-item">91.6</div>
+            
+            <div class="grid-item">High School</div>
+            <div class="grid-item">11th</div>
+            <div class="grid-item">98.6</div>
+            
+            <div class="grid-item">High School</div>
+            <div class="grid-item">12th</div>
+            <div class="grid-item">94.6</div>
+        </div>
+        </div>
+        <p class="para2">
             I now believe that every action we take offers an opportunity for 
             learning and growth. Each movement, whether a small step or a significant leap, 
             provides valuable insights and experiences that contribute to our understanding of the world. 
@@ -72,42 +69,45 @@
             fostering a continuous pursuit of knowledge and self-improvement.
         
         </p>
-        <table class="univ">
-            <thead>
-                <tr>
-                    <th>school</th>
-                    <th>semister</th>
-                    <th>Results</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>common course</td>
-                    <td>1st</td>
-                    <td>3.3</td>
-                </tr>
-                <tr>
-                    <td>common course</td>
-                    <td>1st</td>
-                    <td>3.3</td>
-                </tr>
-                <tr>
-                    <td>common course</td>
-                    <td>1st</td>
-                    <td>3.3</td>
-                </tr>
-                <tr>
-                    <td>common course</td>
-                    <td>1st</td>
-                    <td>3.3</td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="tab2">
+        <div class="grid-table">
+        <div class="grid-header">Common Course</div>
+        <div class="grid-header">Grade</div>
+        <div class="grid-header">Results</div>
+    
+        <div class="grid-item common-course">freshman</div>
+        <div class="grid-item common-course">1st</div>
+        <div class="grid-item common-course">3.3</div>
+    
+        <div class="grid-item common-course">freshman</div>
+        <div class="grid-item common-course">2nd</div>
+        <div class="grid-item common-course">3.7</div>
+    
+        <div class="grid-item common-course">engineering</div>
+        <div class="grid-item common-course">1st</div>
+        <div class="grid-item common-course">3.5</div>
+    
+        <div class="grid-item common-course">SITE</div>
+        <div class="grid-item common-course">2nd</div>
+        <div class="grid-item common-course">3.34</div>
+        </div>
+    </div>
+        
     </section>  
 </body>
 <footer>
-    <p>i achieved through hard work</p>
-     <img src="imgs\linkedin_profile_image.png" alt="my profile">
+    <div class="logo"><img  src="../imgs/linkedin_profile_image.png" alt="my profile"></div>
+    <p>I achieved through hard work</p>
+     
 </footer>
 
 </html>
+<script>
+    const icon = document.getElementsByTagName('i')[0]; // Select the first <i> tag
+    const navList = document.getElementsByTagName('ul')[0]; // Select the first <ul> tag
+
+    icon.addEventListener('click', function() {
+        navList.classList.toggle('show'); // Toggle the 'show' class
+        navList.style.display = navList.style.display === 'block' ? 'none' : 'block'; // Toggle display
+    });
+</script>

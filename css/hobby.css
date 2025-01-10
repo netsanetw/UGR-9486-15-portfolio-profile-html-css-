@@ -1,0 +1,377 @@
+/*deal with the fotter*/
+*{
+    color:#4A4A4A;
+    font-family: Arial, sans-serif;
+    
+}
+body{
+    background-color: #FFF9E6;
+    size:16px;
+         
+}
+h1{
+    size: 20px;
+    text-align: center;
+}
+.artFooter{
+    position: relative;
+    text-align: right;
+    
+    
+    
+}
+img{
+    filter: brightness(1.1) contrast(1.2) sepia(0.3);
+    border-radius: 50px;
+} 
+
+
+i {
+    cursor: pointer; /* Change cursor to pointer on hover */
+    position: absolute; /* Position the icon absolutely */
+    top: 10px; /* Position from the top */
+    right: 10px; /* Position from the right */
+    font-size: 24px; /* Adjust icon size */
+    filter: brightness(1.1) contrast(1.2) sepia(0.3);
+    display: block;
+}
+i:hover + ul {
+display: block; /* Show the list */
+}
+hr{
+border: none; /* Remove default border */
+border-top: 2px solid #FFC300;
+}
+.logo{
+    width:86px;
+    height: 57px;
+}
+  .logo img{
+    width:86px;
+    height: 57px;
+    filter: brightness(1) contrast(1.2) sepia(0.5);
+  } 
+  .my_profile{
+    display: none;
+    width:10%;
+    filter: brightness(0.5) contrast(1.2) sepia(0.5);
+  }
+  .logo:hover + .my_profile  {
+    display: block;
+}
+ul {
+    display:none;
+    list-style-type: none;
+    padding: 0;
+    align-items: center;
+    justify-items: center;
+    position: absolute; /* Position the icon absolutely */
+    top: 10px; /* Position from the top */
+    right: 10px;  
+    background-color: #FFC300;
+}
+li{
+display:block;
+background-color: #FFC300;
+}
+
+
+
+/* Show the list on hover over the icon */
+li a{
+/* Hide the list by default */
+background-color: #FFC300;
+background-size: 100px 50px;
+text-decoration: none;
+}
+a:hover{
+color:#FFE135;
+text-decoration: underline;
+
+}
+footer{
+display: flex;
+position: relative;
+top: -300px;
+size: 12px;
+justify-content: center;
+align-items: center;
+bottom: -300px;
+padding-bottom: 0;
+
+    margin-top: 0; /* Remove margin above the footer */
+    padding-top: 0; /* Remove padding above the footer */
+
+} 
+iframe{
+width:60%;
+height:350px;
+position:relative;
+left:200px;
+top: -500px;
+border-radius: 10px;/*opetional*/
+}
+.imgsVideo  img{
+width:200px;
+height: 200px;
+}
+.last2{
+display: none;
+}
+/*mobile land scape*/
+@media (min-width: 600px) and (max-width: 650px) {
+          .singerImg{
+             display:none;
+          }
+          .dasignImg {
+                   position: relative;
+                   top:30px;
+          }
+          .musicLists {
+display: flex;
+flex-direction: column; /* Stack tracks vertically */
+}
+
+.track {
+display: flex; /* Use flexbox for layout */
+align-items: center; /* Align items vertically centered */
+margin-bottom: 10px; 
+gap:2px;
+/* Space between tracks */
+
+}
+
+.track strong {
+margin-right: 10px;
+ /* Space between the track name and audio player */
+}
+
+
+audio {
+margin-left: 10px;
+width:80px; 
+
+/* Make audio player full width */
+
+  /*Set max width for audio player*/
+}
+iframe{
+position: relative;
+top:-220px;
+height:200px;
+}
+footer{
+
+
+    margin-top: 0; /* Remove margin above the footer */
+    padding-top: 0; /* Remove padding above the footer */
+
+}
+
+
+}
+/*tab portrait*/
+@media (min-width: 650px) and (max-width: 768px) {
+    i {
+display: none; /* Use a more specific selector */
+}
+ul{
+display:flex;
+width: right 250px;
+height:top 100px;
+gap:50px;
+background-color:#FFC300 ;
+}
+li a{
+background-color: #FFC300 ;
+}
+
+nav{
+
+background-color: #FFC300 ;
+}
+.logo{
+width:100px;
+height: 75px;
+}
+.logo img{
+width:100px;
+height: 75px;
+}
+hr{
+display: none;
+}
+.musicLists{
+display: flex;
+}
+.hobimg{
+    display: flex;
+}
+iframe{
+    position: relative;
+    top:-250px;
+    left:400px;
+    width: 200px;
+    height: 250px;
+}
+footer{
+    margin-top: 100px;
+}
+.track{
+    display: flex;
+  
+}
+audio{
+    width:75%;
+}
+
+}
+/*tab landscape*/
+@media (min-width: 768px) and (max-width: 1024px) {
+    i {
+        display: none; /* Use a more specific selector */
+        }
+        ul{
+        display:flex;
+        width: right 250px;
+        height:top 100px;
+        gap:50px;
+        background-color:#FFC300;
+        }
+        li a{
+        background-color:#FFC300;
+        }
+        .homeimg  {
+        display:flex;
+        flex-direction: row;
+        margin-top: 0; /* Remove margin above the footer */
+         padding-top: 0; 
+        
+        }
+        .homeimg img{
+        width: 300px; /* Fixed width */
+        height: 200px;
+        }
+        
+        nav{
+        
+        background-color:#FFC300;
+        }
+        .logo{
+        width:100px;
+        height: 75px;
+        }
+        .logo img{
+        width:100px;
+        height: 75px;
+        }
+        hr{
+        display: none;
+        }
+        a:hover{
+            color:#FFE135;
+        }
+.hobimg{
+display:flex;
+}
+iframe{
+width:300px;
+height: 200px;
+position: relative;
+top:-250px; 
+left:550px;
+}
+footer{
+margin-top: 80px;
+}
+.track {
+display: flex; /* Use flexbox for layout */
+align-items: center; /* Align items vertically centered */
+margin-bottom: 10px;     
+}
+audio{
+width:100px
+}
+
+}
+
+@media (min-width: 1024px){
+    i {
+        display: none; /* Use a more specific selector */
+        }
+        ul{
+        display:flex;
+        width: right 250px;
+        height:top 100px;
+        gap:50px;
+        background-color:#FFC300;
+        gap:120px;
+        font-size:20px;
+        }
+        a:hover{
+            color: #FFE135;
+        }
+        li a{
+        background-color: #FFC300;
+        }
+        .homeimg  {
+        display:flex;
+        flex-direction: row;
+        gap:100px;
+        
+        }
+        .homeimg img{
+        width: 500px; /* Fixed width */
+        height: 300px;
+        
+        }
+        
+        nav{
+        
+        background-color:#FFC300 ;
+        }
+        .logo{
+        width:100px;
+        height: 75px;
+        }
+        .logo img{
+        width:100px;
+        height: 75px;
+        }
+        hr{
+        display: none;
+        }
+     .secondparagraph {
+        width: 50%;
+
+     } 
+     .hobimg{
+       
+        display: flex;
+        flex-direction: row;
+        gap:30px;
+      
+     }
+     .hobimg img{
+        position: relative;
+        top:-100px;
+        left:650px;
+        width: 300px;
+     }
+     .hobimg p{
+        position: relative;
+        top:-100px;
+        left:650px;
+     }
+   iframe{
+    position: relative;
+    top: -200px;
+    }
+    footer{
+        position: relative;
+        top: -200px;
+    }
+    .track{
+        display: flex;
+    }
+    }
